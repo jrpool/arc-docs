@@ -25,7 +25,7 @@ The `.arc` above generates the following REST-ish functions:
 
 ```bash
 /
-|-- html
+|-- json
 |   |-- get-notes/
 |   |-- get-notes-000noteID/
 |   |-- post-notes/
