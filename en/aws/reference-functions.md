@@ -43,6 +43,8 @@ Things to understand:
   - or `location` with a URL value (a string starting w `/`)
   - `session` (optional) a plain `Object`
   - `status` (optional) HTTP error status code responses: `500`, `403`, or `404`
+- `res` can also be invoked with an `Error`
+  - optionally the `Error` instance property of `code`, `status` or `statusCode` can be one of `403`, `404` or `500` to change the HTTP status code
 - `next` (optional) is a function to continue middleware execution 
 
 Here's an example using `session` and `location`. First we render a form:
@@ -134,6 +136,10 @@ exports.handler = arc.html.post(validate, handler)
 
 By default, all `@html` routes are session-enabled. If you wish to disable sessions, remove `SESSION_TABLE_NAME` env variable from the deployment config in the AWS Console.
 
+### Errors
+
+By default all unhandled `Error` conditions are propagated through the HTTP response. If you wish to customize the error template add a function in the Lambda root named `error.js` that accepts an `Error` and responds with a non empty `String`.
+
 ---
 
 ## <a id=arc.json.get href=#arc.json.get>`arc.json.get`</a>
@@ -161,11 +167,17 @@ Things to understand:
   - or `location` with a URL value (a string starting w `/`)
   - `session` (optional) a plain `Object`
   - `status` (optional) HTTP error status code responses: `500`, `403`, or `404`
+- `res` can also be invoked with an `Error`
+  - optionally the `Error` instance property of `code`, `status` or `statusCode` can be one of `403`, `404` or `500` to change the HTTP status code
 - `next` is an optional function to continue middleware execution
 
 ### Sessions
 
 By default, all `@json` routes are session-enabled. If you wish to disable sessions remove `SESSION_TABLE_NAME` env variable from the deployment config in the AWS Console.
+
+### Errors
+
+By default all unhandled `Error` conditions are propagated through the HTTP response. If you wish to customize the error template add a function in the Lambda root named `error.js` that accepts an `Error` and responds with a non empty `String`.
 
 ---
 

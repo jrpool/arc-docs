@@ -4,15 +4,14 @@
 
 ## In progress
 
-- `@js` for `text/javascript` lambda route handlers
-- `@css` for `text/css` lambda route handlers
 - `npm run dns` generates a `static.domainname.com` CNAME that points to an S3 CloudFront Distribution from `@domain` value 
-- `@views` support added to `.arc` for universal render support 
+- `@static` support added to `.arc` for universal render support 
 - `arc-env` env variables and configuration management
 - Generated API Gateway `staging` automatically adds a `GET /_logs` endpoint that pretty prints CloudWatch logs
 
 ## Recently shipped
 
+- <strike>`arc-functions` first class `Error` support</strike>
 - <strike>`arc-functions` consolidate req / res impl</strike>
 - <strike>`arc-docs` guides for http, csrf and `req._url` helpers</strike> [http guide](/reference/http)
 - <strike>`arc-dns` to paper over the API Gateway, AWS Certificate Manager, and Route53 setup</strike> [dns npm workflows](/reference/npm-run-scripts#arc-dns) 
