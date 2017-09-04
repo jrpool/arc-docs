@@ -7,8 +7,6 @@ An `architect`app has HTTP `GET` and `POST` Lambda function handlers for the fol
 - `text/html`
 - `application/json`
 
-> Coming soon: `text/css` and `text/javscript`
-
 ## Request
 
 Every HTTP handler receives a plain javascript object `req` as a first parameter.
@@ -110,6 +108,44 @@ function fail(req, res) {
 
 exports.handler = arc.html.get(fail)
 ```
+
+## Errors
+
+A `res` may also be invoked with an instance of `Error`.
+
+```javascript
+var arc = require('@architect/functions')
+
+// something went wrong!
+function fail(req, res) {
+  res(Error('internal "server" error'))
+}
+
+exports.handler = arc.html.get(fail)
+```
+
+By default an `Error` returns with an HTTP status code `500`. If the `Error` passed to `res` contains a property of `code`, `status` or `statusCode` with a value of `403`, `404` or `500` the status code response is updated accordingly.
+
+### Custom Error Page
+
+The default error response template can be overridden by adding `error.js` that exports a single default function that accepts an `Error` and returns a non empty `String`.
+
+```javascript
+// src/html/get-index/error.js
+module.exports = function error(err) {
+  return `
+  <!doctype html>
+  <html>
+  <body>
+    <h1>${err.message}</h1>
+    <pre>${err.stack}</pre>
+  </body>
+  </html>
+  `
+}
+```
+
+> Have a look at the [error examples repo](https://github.com/arc-repos/arc-example-errors) and demos at https://wut0.click
 
 ## Sessions
 
