@@ -35,7 +35,6 @@ If you _really_ want to manually configure DNS you can follow these guides below
 
 These instructions are adapted from the tutorial at [LEANX](http://www.leanx.eu/tutorials/set-up-amazons-api-gateway-custom-domain-with-cloudflare) and updated to our most recent experience deploying this documentation site to AWS, using architect and custom DNS via Cloudflare. Your mileage may vary.
 
-0. [Strongly reccomend: leave Cloudflare](http://www.sfgate.com/technology/businessinsider/article/Cloudflare-is-helping-defend-a-neo-Nazi-website-11818696.php)
 1. First, ensure that your domain is registered and is using the Cloudflare name servers and that your architect-generated application has been deployed to AWS.
 2. In your AWS management console go to the Certificate Management service and ensure you are in the US East (N. Virginia) aka us-east-1 region.
 3. Click on "Import a certificate".
