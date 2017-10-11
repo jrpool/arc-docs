@@ -36,6 +36,7 @@ If you are evaluating `architect` we also strongly recommend checking out:
 - [claudia](https://claudiajs.com/)
 - [sam](https://github.com/awslabs/serverless-application-model/blob/master/HOWTO.md)
 - [serverless](https://serverless.com/)
+- [shep](https://www.npmjs.com/package/shep)
 - [sparta](http://gosparta.io/)
 - [terraform](https://www.terraform.io/)
 - [zappa](https://github.com/Miserlou/Zappa)
