@@ -1,18 +1,17 @@
 ## Provision and deploy cloud infrastructure with a simple plaintext manifest
 
-Event driven programming with cloud functions can be tricky to set up and maintain. `architect` offers a simple plaintext manifest and `npm` script based workflows for provisioning, deploying, orchestrating, and working offline with cloud infrastructure.
+Event driven programming with cloud functions can be tricky to set up and maintain. `architect` uses a simple plaintext manifest and `npm` script based workflows for provisioning cloud infrastructure in minutes and deploying in seconds. 
 
 Currently, `architect` supports the following Amazon Web Services:
 
-- [Lambda](https://aws.amazon.com/lambda/)
-- [API Gateway](https://aws.amazon.com/api-gateway/)
-- [Route53](https://aws.amazon.com/route53)
-- [CloudFront](https://aws.amazon.com/cloudfront/)
-- [S3](https://aws.amazon.com/s3/)
-- [Simple Notification Service](https://aws.amazon.com/sns/)
-- [CloudWatch Events](https://docs.aws.amazon.com/lambda/latest/dg/with-scheduled-events.html)
-- [DynamoDB](https://aws.amazon.com/dynamodb/)
-- [SNS](https://aws.amazon.com/sns/)
+- [Lambda](https://aws.amazon.com/lambda/) for compute functions
+- [API Gateway](https://aws.amazon.com/api-gateway/) for HTTP routing
+- [Route53](https://aws.amazon.com/route53) for DNS
+- [CloudFront](https://aws.amazon.com/cloudfront/) for CDN
+- [S3](https://aws.amazon.com/s3/) for static assets
+- [Simple Notification Service](https://aws.amazon.com/sns/) for event pub/sub functions
+- [CloudWatch Events](https://docs.aws.amazon.com/lambda/latest/dg/with-scheduled-events.html) for scheduling functions
+- [DynamoDB](https://aws.amazon.com/dynamodb/) for data persistence, querying and trigger functions
 
 Everything you do with `architect` starts with a `.arc` file:
 
