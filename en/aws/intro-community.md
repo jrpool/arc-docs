@@ -1,6 +1,6 @@
 # Community
 
-First, please familiarize yourself with the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct) and the [Begin Community Code of Conduct](https://github.com/smallwins/policy/blob/master/begin-community-code-of-conduct.md).
+First, please familiarize yourself with the [JS Foundation Code of Conduct](https://js.foundation/community/code-of-conduct) and the [Begin Community Code of Conduct](https://github.com/smallwins/policy/blob/master/begin-community-code-of-conduct.md). [Read about the JS Foundation and open governance here.](https://js.foundation/about)
 
 We ask that you do your part in helping us ensure a safe, positive, inclusive, constructive, and welcoming environment for all.
 
