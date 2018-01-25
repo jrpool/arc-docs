@@ -105,7 +105,7 @@ var server
 test('arc.sandbox.http.start', t=> {
   t.plan(1)
   server = arc.sandbox.http.start(function _start() {
-    t.ok(true, 'http server started on https://localhost:3333')
+    t.ok(true, 'http server started on http://localhost:3333')
   })
 })
 
@@ -115,7 +115,7 @@ test('arc.sandbox.http.start', t=> {
 test('get /', t=> {
   t.plan(1)
   tiny.get({
-    url: 'https://localhost:3333'
+    url: 'http://localhost:3333'
   }, 
   function _get(err, result) {
     if (err) throw err
