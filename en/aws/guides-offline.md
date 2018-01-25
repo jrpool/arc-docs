@@ -48,7 +48,7 @@ Add the following to `package.json`:
 
 ```javascript
 {
-  "test": "NODE_ENV=testing AWS_PROFILE=xxx AWS_REGION=xxx tape test/**/*-test.js | tap-spec"
+  "test": "NODE_ENV=testing AWS_PROFILE=xxx AWS_REGION=xxx tape test/*-test.js | tap-spec"
 }
 ```
 
