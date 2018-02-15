@@ -20,7 +20,7 @@ Whether we label them *constraints* or *limits*, they are **tradeoffs** you need
 
 ## Arc constraints
 
-Most of these constraints where borne out of necessity for speed; velocity aided by way of minimum essential capability.
+Most of these constraints were borne out of necessity for speed; velocity aided by way of minimum essential capability.
 
 These items will be great topics of community discussion and future contribution, so file them as: _maybe someday_.
 
